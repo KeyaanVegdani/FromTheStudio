@@ -1,0 +1,98 @@
+/* Fonts */
+
+@font-face {
+  font-family: PP Editorial New;
+  src: url(../fonts/PPEditorialNew-Regular.otf);
+}
+
+@font-face {
+    font-family: Barge;
+    src: url(../fonts/fonnts.com-Barge-Regular.otf);
+}
+
+@font-face {
+    font-family: Forma DJR;
+    src:url(../fonts/FormaDJRText-Bold-Testing.ttf)
+}
+
+@font-face {
+    font-family: Forma DJR Light;
+    src:url(../fonts/FormaDJRText-Light-Testing.ttf)
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background:  #FEFFF0;
+  height: 100%;
+  font-family: "Forma DJR Light", sans-serif;
+}
+
+.menu-bar {
+  max-width: 100%;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  user-select: none;
+}
+
+.menu-link {
+  font-family: "Forma DJR Light";
+  font-size: 1.3rem;
+  color: #DE4613;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.menu-link:hover {
+  opacity: 0.7;
+}
+
+.right {
+  float: right;
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  cursor: grab;
+}
+
+canvas:active {
+  cursor: grabbing;
+}
+
+#zoom-controls {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#zoom-controls button {
+  font-size: 1.2rem;
+  background: #DE4613;
+  color: #CEFF52;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  user-select: none;
+  transition: background-color 0.1s;
+}
+
+#zoom-controls button:hover {
+    background: #CEFF52;
+    color: #DE4613;
+}

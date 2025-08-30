@@ -1,0 +1,673 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(180deg, #4D3FF0 4.86%, #EB4E5E 80.12%, #FFF5F5 90.42%);
+    overflow-x: hidden;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: PP Editorial New;
+  src: url(../fonts/PPEditorialNew-Regular.otf);
+}
+
+@font-face {
+    font-family: Barge;
+    src: url(../fonts/fonnts.com-Barge-Regular.otf);
+}
+
+@font-face {
+    font-family: Forma DJR;
+    src:url(../fonts/FormaDJRText-Bold-Testing.ttf)
+}
+
+@font-face {
+    font-family: Forma DJR Light;
+    src:url(../fonts/FormaDJRText-Light-Testing.ttf)
+}
+/* Background */
+
+body{
+    background-color: #4D3FF0;
+    overflow-x: hidden;
+}
+
+
+/* Menu */
+
+.menu-link{
+    font-family: "Forma DJR Light";
+    font-size: 1.3rem;
+    color: #FFF5F5;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.menu-link:hover{
+    opacity: 0.7;
+}
+
+.right{
+    float:right;
+}
+
+.menu-bar{
+    max-width: 100%;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    left:0;
+    z-index: 5;
+
+}
+
+/* Video */
+
+.top-video{
+    width: 100%;
+}
+
+.video-section{
+    margin-bottom: 2rem;
+}
+
+/* Title */
+
+h1{
+    font-family: "PP Editorial New";
+    color: #4437ED;
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background-color: #FAE0E4;
+    padding: 1rem;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(6deg);
+    border-radius: 0.625rem;
+}
+
+h2{
+    font-family: "Barge";
+    color: #FFF;
+    text-align: center;
+    font-size: 13rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10rem;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+.title-section{
+    margin-top: 10rem;
+}
+
+/* Second Title */
+
+h3{
+    font-family: "Forma DJR";
+    color: #EAFA70;
+    text-align: center;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.5rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.special-text{
+    font-family: "PP Editorial New";
+    color: #EAFA70;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    display: inline;
+}
+
+.small-text{
+    color: #EAFA70;
+    font-family: "Forma DJR Light";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.right-text{
+    text-align: right;
+    margin-right: 8rem;
+}
+
+.left-text{
+    text-align: left;
+    margin-left: 8rem;
+}
+
+.title-small{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30rem;
+}
+
+/* Gradients */
+
+.gradients{
+
+    margin-top: 5rem;
+
+}
+
+.background-grad{
+    width: 340vw; /* 150% of viewport width */
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+}
+
+/* end links */
+
+.end-link{
+    font-family: "PP Editorial New";
+    font-size: 3rem;
+    text-decoration: none;
+    text-align: center;
+    color: #3F33EB;
+    margin-bottom: 0.2rem;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.end-link:hover{
+    opacity: 0.8;
+}
+
+.end-links{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    transform: translate(0, -40rem);
+}
+
+.small-link{
+    font-family: "Forma DJR Light";
+    color: #3F33EB;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-top: 2rem;
+    text-align: center;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small-link:hover{
+    opacity: 0.8;
+}
+
+
+/* Cards */
+
+.card{
+    color: #8E44AF;
+    font-family: "Forma DJR Light";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.04831rem; /* 109.244% */
+    border: 1.092px solid #8E44AF;
+    background: radial-gradient(232.53% 198.4% at 50% 50%, #FFC2FC 0%, #D8FF70 100%);
+    box-shadow: 20px 20px 100px 50px rgba(243, 102, 104, 0.20);
+    max-width: 42rem;
+    padding: 3.34rem;
+
+}
+
+.front{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 2;
+    rotate: -3deg;
+
+
+}
+
+.back{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -40%);
+
+    rotate: 10deg;
+    z-index: 1;
+
+}
+
+.empty{
+    position: relative;
+    left: 50%;
+    transform: translate(-40%, -250%);
+    rotate: -15deg;
+    height: 5rem;
+    z-index: 0;
+
+}
+
+.special-word{
+    font-family: "Forma DJR";
+    font-size: 1.875rem;
+    display: inline;
+}
+
+.titleVer{
+    font-family: "PP Editorial New";
+    font-size: 1.5rem;
+    max-width: fit-content;
+    transform: rotate(-14.174deg);
+    padding: 2rem;
+
+    position: relative;
+    left:50%;
+    transform: translate(-180%, -130%);
+    rotate: -10deg;
+}
+
+.iconOne{
+    position: absolute;
+    left: 50%;
+    transform: translate(10%, -80%);
+    rotate: 30deg;
+    z-index: 3;
+}
+
+.iconTwo{
+    position: absolute;
+    left: 50%;
+    transform: translate(-350%, 0%);
+    rotate: -20deg;
+    z-index: 3;
+}
+
+.card-holder{
+    margin-top: -20rem;
+}
+
+
+/* mages */
+
+.big-img{
+    width: 320vw; /* 150% of viewport width */
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.image-section{
+    margin-top: -50rem;
+}
+
+
+.collage-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12-column grid for flexibility */
+  gap: 20px;
+  max-width: 90rem;
+  position: relative;
+  transform: translate(0, -200vw);
+}
+
+.collage-item {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Manual placement to mimic your layout */
+.img-1 {
+  grid-column: 2 / span 4;
+  grid-row: 1;
+}
+
+.img-2 {
+  grid-column: 6 / span 6;
+  grid-row: 1;
+  margin-left: -10%;
+  margin-top: 30%;
+}
+
+.img-3 {
+  grid-column: 1 / span 6;
+  grid-row: 2;
+  margin-top: 10rem;
+}
+
+.img-4 {
+  grid-column: 8 / span 5;
+  grid-row: 2;
+  margin-top: 55rem;
+  margin-left: -20rem;
+  z-index: 4;
+}
+
+.img-5 {
+  grid-column: 2 / span 4;
+  grid-row: 3;
+  margin-top: -5rem;
+  margin-left: 4rem;
+}
+
+.img-6 {
+  grid-column: 7 / span 6;
+  grid-row: 3;
+  margin-top: 20rem;
+}
+
+.img-7 {
+  grid-column: 4 / span 5;
+  grid-row: 4;
+  margin-top: 4rem;
+  margin-left: -5rem;
+}
+
+
+
+/* text */
+
+#more {
+  display: none;
+}
+
+h4{
+    font-family: "Forma DJR";
+    color: #FFF;
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.875rem; 
+}
+
+.serif-italic{
+    font-family: "PP Editorial New";
+    font-style: italic;
+    display: inline;
+}
+
+p{
+    font-family: "Forma DJR Light";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem; /* 100% */
+    max-width: 40rem;
+    color: #FFF;
+}
+
+span{
+    font-family: "Forma DJR Light";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem; /* 100% */
+    max-width: 40rem;
+    color: #FFF;
+}
+
+#myBtn{
+    font-family: "Forma DJR Light";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem; /* 100% */
+    max-width: 40rem;
+    color: #FFF;
+    background:none;
+    border: none;
+    padding: none;
+
+    margin-top: 4rem;
+}
+
+#myBtn:hover{
+    color: #e7e7e7;
+    cursor:pointer;
+}
+
+.text-section{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transform: translate(0, -150vw);
+}
+
+
+
+
+
+
+@media(max-width: 65rem){
+
+    .img-2 {
+    grid-column: 6 / span 6;
+    grid-row: 1;
+    margin-left: -20%;
+    margin-top: 20%;
+    }
+
+    .img-3 {
+    grid-column: 1 / span 6;
+    grid-row: 2;
+    margin-top: 5rem;
+    }
+
+    .img-4 {
+    grid-column: 8 / span 5;
+    grid-row: 2;
+    margin-top: 20rem;
+    margin-left: -8rem;
+    z-index: 4;
+    }
+
+    .img-5 {
+    grid-column: 2 / span 4;
+    grid-row: 3;
+    margin-top: -2rem;
+    margin-left: 6rem;
+    }
+
+    .img-6 {
+    grid-column: 7 / span 6;
+    grid-row: 3;
+    margin-top: 15rem;
+    }
+
+    .img-7 {
+    grid-column: 4 / span 5;
+    grid-row: 4;
+    margin-top: 4rem;
+    margin-left: -5rem;
+    }
+
+
+    p{
+    font-size: 1.5rem;
+    line-height: 1.5rem; /* 100% */
+    }
+
+    .text-section{
+        padding: 1.5rem;
+        padding-top: none;
+        transform: translate(0, -180vw);
+    }
+
+    h2{
+        font-family: "Barge";
+        color: #FFF;
+        text-align: center;
+        font-size: 6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 5rem;
+        max-width: 100rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+    }
+
+    .title-section{
+        margin-top: -16rem;
+    }
+
+    .video-section{
+        margin-bottom: 0rem;
+        padding: 0;
+        transform: scale(150%) translate(0, -5rem);
+    }
+
+
+    .card{
+        font-family: "Forma DJR Light";
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.3rem; /* 109.244% */
+        max-width: 30rem;
+        padding: 2rem;
+
+    }
+
+    .special-word{
+        font-family: "Forma DJR";
+        font-size: 1.2rem;
+        display: inline;
+    }
+
+    .titleVer{
+        font-family: "PP Editorial New";
+        font-size: 1.2rem;
+        max-width: fit-content;
+        transform: rotate(-14.174deg);
+        padding: 1.2rem;
+        z-index: 3;
+        position: relative;
+        left:50%;
+        transform: translate(-130%, -130%);
+        rotate: -10deg;
+    }
+
+    .title-small{
+        padding: 2rem;
+    }
+
+    .end-links{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    transform: translate(0, -30rem);
+}
+
+}
+
+@media(max-width: 34.25rem){
+    h2{
+        font-size: 4rem;
+        line-height: 3rem;
+    }
+    .video-section{
+        transform: scale(200%) translate(0, -8rem);
+    }
+
+    .title-section{
+        margin-top: -30rem;
+    }
+
+    h4{
+        font-size: 2rem;
+    }
+
+    .card{
+        font-family: "Forma DJR Light";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.1rem; /* 109.244% */
+        max-width: 16rem;
+        padding: 1rem;
+    }
+
+    .special-word{
+        font-family: "Forma DJR";
+        font-size: 1.2rem;
+        display: inline;
+    }
+
+    .titleVer{
+        font-family: "PP Editorial New";
+        font-size: 1rem;
+        max-width: fit-content;
+        transform: rotate(-14.174deg);
+        padding: 1rem;
+        z-index: 3;
+        position: relative;
+        left:50%;
+        transform: translate(-80%, -130%);
+        rotate: -10deg;
+    }
+
+    .card-holder{
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+
+
+    .title-small{
+        padding: 1rem;
+        margin-top: 20rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+        line-height: 1.2rem;
+    }
+
+    .special-text{
+        font-size: 1.5rem;
+    }
+
+    .small-text{
+        font-size: 1rem;
+    }
+
+    .menu-link{
+    font-family: "Forma DJR Light";
+    font-size: 0.8rem;
+    color: #FFF5F5;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.end-links{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    transform: translate(0, -10rem);
+}
+}

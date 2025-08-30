@@ -1,0 +1,309 @@
+/* Fonts */
+
+@font-face {
+  font-family: PP Editorial New;
+  src: url(../fonts/PPEditorialNew-Regular.otf);
+}
+
+@font-face {
+    font-family: Barge;
+    src: url(../fonts/fonnts.com-Barge-Regular.otf);
+}
+
+@font-face {
+    font-family: Forma DJR;
+    src:url(../fonts/FormaDJRText-Bold-Testing.ttf)
+}
+
+@font-face {
+    font-family: Forma DJR Light;
+    src:url(../fonts/FormaDJRText-Light-Testing.ttf)
+}
+
+body.bg-0 { background-color: #DE4613; } /* red/orange */
+body.bg-1 { background-color: #12713D; } /* blue */
+body.bg-2 { background-color: #F17E12; } /* green */
+body.bg-3 { background-color: #4437ED; } /* orange/yellow */
+
+/* Menu */
+
+.menu-link{
+    font-family: "Forma DJR Light";
+    font-size: 1.3rem;
+    color: #FFF5F5;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.menu-link:hover{
+    opacity: 0.7;
+}
+.right{
+    float:right;
+}
+
+.menu-bar{
+    max-width: 100%;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    left:0;
+    z-index: 5;
+
+}
+
+
+/* Lock scrolling */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  background: #111;
+  font-family: sans-serif;
+}
+
+body{
+    transition: all 0.2s;
+    opacity: 1;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+.nav-bar{
+    position: absolute;
+    top:0rem;
+}
+
+.nav-Link{
+    text-decoration: none;
+    color: #FEFFF1;
+    text-align: center;
+    font-family: "Forma DJR light";
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 101.028%; /* 1.45225rem */
+    display: inline;
+    float: left;
+}
+
+.img-link{
+    transition: all 0.5s cubic-bezier();
+    z-index: 2;
+}
+
+.right{
+    align-self: right;
+    text-align: right;
+    float: right;
+}
+
+
+.step-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(0, -4rem);
+}
+
+.image-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.5s ease;
+  z-index: 1;
+  pointer-events: none; /* disable by default */
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.image-wrapper.active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: auto; /* only the active one is clickable */
+}
+
+img {
+  max-width: 100rem;
+  height: auto;
+  display: block;
+}
+
+
+/* dots */
+
+.dot-nav {
+  position: fixed;
+  right: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dot.active {
+  background-color: #fff;
+}
+
+.dot:hover{
+    background-color: #fff;
+}
+
+.names-bar{
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 85vw;
+    align-content: center;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.small-text{
+    color: #fff;
+    font-family: "Forma DJR Light", sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 101.028%; /* 1.26288rem */
+    text-align: right;
+}
+
+.name-text{
+    color: #fff;
+    font-family: "PP Editorial New", serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 101.028%; /* 2.52569rem */
+}
+
+.name-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-self: center;
+}
+
+.name-layout:hover{
+    color: #fff;
+    cursor: pointer;
+}
+
+.name-layout.active .name-text,
+.name-layout.active .small-text {
+  opacity: 1;
+  transition: transform 0.3s ease;
+}
+
+.name-layout .name-text,
+.name-layout .small-text {
+  opacity: 0.5;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.name-layout:hover .name-text,
+.name-layout:hover .small-text {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+
+
+
+/* media */
+
+@media (max-width:57.8rem){
+  .small-text{
+    color: #fff;
+    font-family: "Forma DJR Light", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 101.028%; /* 1.26288rem */
+    text-align: right;
+    margin-right: 0rem;
+}
+
+.name-text{
+    color: #fff;
+    font-family: "PP Editorial New", serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 101.028%; /* 2.52569rem */
+}
+}
+
+@media (max-width:41rem){
+
+  .names-bar{
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 85vw;
+    align-content: right;
+    margin-bottom: 1.5rem;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+  .small-text{
+    color: #fff;
+    font-family: "Forma DJR Light", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 101.028%; /* 1.26288rem */
+    text-align: right;
+    margin-right: 0rem;
+}
+
+.name-text{
+    color: #fff;
+    font-family: "PP Editorial New", serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 101.028%; /* 2.52569rem */
+    text-align: left;
+}
+
+.step-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(0, -5rem) scale(0.7);
+}
+
+.menu-link{
+    font-family: "Forma DJR Light";
+    font-size: 0.8rem;
+    color: #FFF5F5;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+}

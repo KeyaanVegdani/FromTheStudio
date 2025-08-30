@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tae.css">
+    <title>Tae Hyun Kim</title>
+
+    <script src="../javascript/parallax.js"></script>
+</head>
+<body>
+    <div class="menu-bar">
+        <a href="../index.html" class="menu-link left">stories from the studio</a>
+
+        <a href="quotes.html" class="menu-link right">what is siat</a>
+    </div>
+    <div class="video-section">
+        <video width="1920" height="1080" autoplay loop muted class="top-video">
+        <source src="../videos/TURT-NEW.mov" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="title-section">
+        <h1>tae hyun says</h1>
+        <h2>IT’S ALL A BALANCING ACT</h2>
+    </div>
+
+    <div class="title-small">\
+        <div class="small-text left-text">what is</div>
+        <h3> What is <div class="special-text">SIAT</div> to Tae?</h3>
+        <div class="small-text right-text">to tae?</div>
+    </div>
+
+    <div class="gradients">
+        <img src="../assets/Radial-Gradients.svg" class="background-grad">
+    </div>
+
+    <div class="card-holder">
+        <div class="card titleVer">
+            What is SIAT to Tae?
+        </div>
+
+        <img src="../assets/Flower.svg" alt="" class="iconOne">
+        <img src="../assets/Circles.svg" alt="" class="iconTwo">
+        <div class="cards">
+            <div class="card front">
+                A special community where you really have the chance to explore areas of technology 
+                <div class="special-word">you’re interested in.</div> You are also surrounded with like-minded students who encourage you to pursue your passion.
+            </div>
+            <div class="card back">
+                A special community where you really have the chance to explore areas of technology 
+                <div class="special-word">you’re interested in.</div> You are also surrounded with like-minded students who encourage you to pursue your passion.
+            </div>
+            <div class="card empty">
+            </div>
+        </div>
+    </div>
+
+    <img src="../assets/BottomGrad.svg" class="background-grad">
+
+    <div class="image-section">
+        <img src="../assets/TaeBig.png" alt="Joseph Lee Close Up" class="big-img">
+    </div>
+
+    <div class="collage-container">
+        <img src="../assets/Tae1.png" class="collage-item img-1" />
+        <img src="../assets/Tae2.png" class="collage-item img-2" />
+        <img src="../assets/Tae3.png" class="collage-item img-3" />
+        <img src="../assets/Tae4.png" class="collage-item img-4" />
+        <img src="../assets/Tae5.png" class="collage-item img-5" />
+        <img src="../assets/Tae6.png" class="collage-item img-6" />
+        <img src="../assets/Tae7.png" class="collage-item img-7" />
+    </div>
+
+    <div class="text-section">
+        <h4>Learn About <div class="serif-italic">Tae Hyun</div></h4>
+        <p>
+            <p>As a lifelong athlete, Tae grew up playing organized sports his parents claimed would teach him important life skills. Soccer, basketball, swimming, ultimate frisbee, track and field, cross country - nothing was off limits for young Tae.  </p>
+
+            <p>Now entering his fourth year in SIAT, Tae plays for the SFU Volleyball Club and continues ultimate frisbee. 
+
+            </p>
+
+            <p>Balancing athletics and academics can feel like walking a tightrope. </p>
+            
+            <span id="dots">...</span>
+            
+            <span id="more">
+
+                <p>While it’s not always as effortless as Tae makes it seem, he has an insider secret to share: It’s all about holding yourself accountable. </p>
+
+                <p>Discipline is the name of the game as he makes sure to block out time for schoolwork, practices, other extracurriculars, and of course, himself. Sticking to a tight schedule ensures there is enough Tae to go around and enough time to rest up for game days. </p>
+
+                <p>Tae’s game face is on in and outside of the classroom. He finds many ways to apply what he’s learned from athletics to his work in SIAT - perhaps some of the life skills his parents hoped to instill in him. The collaborative nature of SIAT is a perfect fit for Tae. Spending years of his life in a team setting, passing a ball is just like a group project as Tae has learned to work with others towards a common goal. </p>
+
+                <p>He attributes team sports to teaching him how to work out differences with people who have conflicting perspectives and embrace unconventional ideas. Through sports, Tae has also learned the value of coachability, understanding how to make feedback actionable and always striving to improve his skills.</p>
+
+                <p>Tae’s newest teammates are the dedicated members of SIAT’s student union in which he serves as their Director of Communication Design. He enjoys the team environment and culture they have created, fostering a cooperative space where work doesn’t really feel like work. Tae cherishes the friendships he has created through this role. </p>
+
+                <p>Moving forward, Tae is excited to meet more people and form connections, constantly seeking out new teammates to crush goals with. </p>
+
+            </span>
+        </p>
+        
+        <button onclick="myFunction()" id="myBtn">more</button>
+    </div>
+
+    <div class="end-links">
+        <a href="joseph.html" class="end-link">Joseph</a>
+        <a href="tae.html" class="end-link">Tae Hyun</a>
+        <a href="fernando.html" class="end-link">Fernando</a>
+        <a href="michelle.html" class="end-link">Michelle</a>
+
+        <a href="../index.html" class="small-link">back home</a>
+    </div>
+
+
+
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+
+
+</body>
+</html>
