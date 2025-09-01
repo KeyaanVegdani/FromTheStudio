@@ -1,5 +1,4 @@
 var a = document.getElementById("audio");
-var interval = 200; // 200ms interval
 var fadeIn = false;
 
 window.addEventListener("scroll", () => {
