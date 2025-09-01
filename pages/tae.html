@@ -7,12 +7,13 @@
     <title>Tae Hyun Kim</title>
 
     <script src="../javascript/parallax.js"></script>
+    <script src="../javascript/audio.js"></script>
 </head>
 <body>
     <div class="menu-bar">
         <a href="../index.html" class="menu-link left">stories from the studio</a>
 
-        <img src="../assets/buttonSound.png" width="20" height="20" onclick="soundOpp()" alt = "Sound Button" id="soundImg"/>
+        <!-- <img src="../assets/buttonSound.png" width="20" height="20" onclick="soundOpp()" alt = "Sound Button" id="soundImg"/> -->
 
         <a href="quotes.html" class="menu-link right">what is siat</a>
     </div>
@@ -39,6 +40,7 @@
         <div class="small-text left-text">what is</div>
         <h3> What is <div class="special-text">SIAT</div> to Tae?</h3>
         <div class="small-text right-text">to tae?</div>
+        <script>src="checkAudio()"</script>
     </div>
 
     <div class="gradients">
@@ -48,6 +50,7 @@
     <div class="card-holder">
         <div class="card titleVer">
             What is SIAT to Tae?
+            <script soundOpp()></script>
         </div>
 
         <img src="../assets/Flower.svg" alt="" class="iconOne">
@@ -130,7 +133,6 @@
 
         var a = document.getElementById("audio");
         var s = document.getElementById("soundImg");
-        
 
         function soundOpp() {
             if (a.volume == 0) {
