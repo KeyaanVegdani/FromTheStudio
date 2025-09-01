@@ -11,13 +11,23 @@
 <body>
     <div class="menu-bar">
         <a href="../index.html" class="menu-link left">stories from the studio</a>
+
+        <img src="../assets/buttonSound.png" width="20" height="20" onclick="soundOpp()" alt = "Sound Button" id="soundImg"/>
+
         <a href="quotes.html" class="menu-link right">what is siat</a>
     </div>
     <div class="video-section">
         <video width="1920" height="1080" autoplay loop muted class="top-video">
-        <source src="../videos/MURT-NEW.mov" type="video/mp4">
+        <!-- <source src="../videos/MURT-NEW.mov" type="video/mp4"> -->
+        <source src="../videos/Murt2.mp4" type="video/mp4">
         Your browser does not support the video tag.
         </video>
+
+        <audio controls loop="loop" autoplay="true" id="audio">
+        <source src="../videos/MURT-NEW.mov" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio> 
+
     </div>
 
     <div class="title-section">
@@ -111,6 +121,23 @@
 
 
     <script>
+        var a = document.getElementById("audio");
+        var s = document.getElementById("soundImg");
+        
+
+        function soundOpp() {
+            if (a.volume == 0) {
+                a.volume = 1;
+                s.src="../assets/buttonSound.png" 
+            }
+
+            else {
+                a.volume = 0;
+                s.src="../assets/buttonMute.png" 
+            }
+
+        }
+
         function myFunction() {
             var dots = document.getElementById("dots");
             var moreText = document.getElementById("more");
