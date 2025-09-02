@@ -78,6 +78,15 @@ body{
     margin-bottom: 2rem;
 }
 
+.sound-icon{
+    max-width: 100%;
+    padding: 1rem;
+    position: fixed;
+    bottom: 1rem;
+    margin-left: 1rem;
+    z-index: 5;
+}
+
 /* Title */
 
 h1{

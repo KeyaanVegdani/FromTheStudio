@@ -7,15 +7,20 @@
     <title>Tae Hyun Kim</title>
 
     <script src="../javascript/parallax.js"></script>
-    <script src="../javascript/audio.js"></script>
+    <!-- <script src="../javascript/audio.js"></script> -->
 </head>
 <body>
     <div class="menu-bar">
         <a href="../index.html" class="menu-link left">stories from the studio</a>
 
-        <!-- <img src="../assets/buttonSound.png" width="20" height="20" onclick="soundOpp()" alt = "Sound Button" id="soundImg"/> -->
+        <!-- leave this in to have icon be at top -->
+        <!-- <img src="../assets/buttonSound.png" width="12" height="12" onclick="soundOpp()" alt = "Sound Button" id="soundImg"/> -->
 
         <a href="quotes.html" class="menu-link right">what is siat</a>
+    </div>
+    <!-- comment this div out to get rid of icon at bottom -->
+    <div class="sound-icon">
+        <img src="../assets/buttonSound.png" width="16" height="16" onclick="soundOpp()" alt = "Sound Button" id="soundImg"/>
     </div>
     <div class="video-section">
         <video width="1920" height="1080" autoplay loop muted class="top-video">
